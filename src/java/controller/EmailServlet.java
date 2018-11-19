@@ -39,7 +39,7 @@ public class EmailServlet extends HttpServlet {
         //String login = request.getParameter("login");
         String login ="sensordeveloper";
         //String password = request.getParameter("password");
-        String password ="devadmin@2018";
+        String password ="***************";
 
         RequestDispatcher dispatcher = request.getRequestDispatcher(succ);
 
