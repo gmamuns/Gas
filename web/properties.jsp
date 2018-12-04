@@ -8,7 +8,7 @@
 
 <%
     String driver = "com.mysql.jdbc.Driver";
-    String url = "jdbc:mysql://localhost:3306/cvasu";
+    String url = "jdbc:mysql://localhost:3306/iot";
     String user = "root";
     String password = "";
     //int treshholdValue = 400;
