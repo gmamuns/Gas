@@ -13,11 +13,12 @@
 
     String userid = request.getParameter("uname");
     String pwd = request.getParameter("pass");
-    session.setAttribute("uname", userid);
+    
 
     ResultSet rs;
     rs = st.executeQuery("select * from users where uname='" + userid + "' and pass='" + pwd + "'");
     if (rs.next()) {
+        session.setAttribute("uname", userid);
         session.setAttribute("userid", userid);
         //out.println("welcome " + userid);
         //out.println("<a href='logout.jsp'>Log out</a>");
