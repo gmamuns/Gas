@@ -49,6 +49,7 @@ public class EmailSend extends HttpServlet {
             props.setProperty("mail.host", "smtp.gmail.com");
             props.setProperty("mail.smtp.port", "587");
             props.setProperty("mail.smtp.auth", "true");
+            props.setProperty("mail.smtp.ssl.trust", "smtp.gmail.com");
             props.setProperty("mail.smtp.starttls.enable", "true");
             
             Authenticator auth = new SMTPAuthenticator(login, password);
